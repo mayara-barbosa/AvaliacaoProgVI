@@ -1,0 +1,10 @@
+<p id="notice"><%= notice %></p>
+
+<br>
+
+<% if current_user != nil %>
+    <%= "Seja bem vindo, #{ current_user.email }!" %>
+<% else %>
+    <%= "Seja bem vindo! Faca o login para continuar." %>
+<% end %>
+
